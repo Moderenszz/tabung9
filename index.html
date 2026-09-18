@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul Belajar: Ruang Bangun Tabung - Kelas 9 SMP</title>
+    <title>Mengenal Ruang Bangun Tabung - Kelas 9 SMP</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Poppins -->
@@ -17,7 +17,7 @@
             color: #ffffff;
             overflow-x: hidden;
         }
-        /* Background Nebula Sesuai Gambar 2 */
+        /* Background Nebula */
         .nebula-bg {
             position: fixed;
             top: 0;
@@ -68,15 +68,14 @@
             </div>
             <div>
                 <h1 class="font-bold text-sm md:text-base tracking-wide text-white">Matematika Kelas 9</h1>
-                <p class="text-xs text-purple-300">Bab: Bangun Ruang Sisi Lengkung (Tabung)</p>
+                <p class="text-xs text-purple-300">Ensiklopedi Bangun Ruang: Tabung</p>
             </div>
         </div>
         <nav class="hidden md:flex space-x-6 text-sm text-gray-300 font-medium">
-            <a href="#pengertian" class="hover:text-pink-400 transition">Pengertian</a>
-            <a href="#jaring" class="hover:text-pink-400 transition">Jaring-Jaring</a>
-            <a href="#rumus" class="hover:text-pink-400 transition">Rumus</a>
-            <a href="#contoh" class="hover:text-pink-400 transition">Contoh Soal</a>
-            <a href="#kalkulator" class="hover:text-pink-400 transition">Kalkulator</a>
+            <a href="#pengertian" class="hover:text-pink-400 transition">Apa itu Tabung</a>
+            <a href="#visual" class="hover:text-pink-400 transition">Visual 3D & 2D</a>
+            <a href="#sifat" class="hover:text-pink-400 transition">Sifat & Unsur</a>
+            <a href="#penerapan" class="hover:text-pink-400 transition">Dalam Kehidupan</a>
         </nav>
     </header>
 
@@ -86,17 +85,17 @@
             <i class="fa-solid fa-cylinder text-6xl text-white"></i>
         </div>
         <h2 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight bg-gradient-to-r from-white via-pink-200 to-purple-300 bg-clip-text text-transparent">
-            Eksplorasi Ruang Bangun Tabung
+            Mengenal Lebih Dekat Ruang Bangun Tabung
         </h2>
         <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Modul interaktif lengkap dengan visualisasi 3D tabung & jaring-jaring 2D, penjabaran rumus resmi buku kelas 9, serta kalkulator otomatis.
+            Informasi lengkap seputar karakteristik, bentuk visual 3D, jaring-jaring 2D, dan fungsi tabung di dunia nyata tanpa rumus hitung-hitungan yang rumit.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
             <a href="#pengertian" class="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold text-sm transition shadow-lg shadow-pink-600/30">
-                Mulai Belajar <i class="fa-solid fa-arrow-down ml-2"></i>
+                Jelajahi Materi <i class="fa-solid fa-arrow-down ml-2"></i>
             </a>
-            <a href="#jaring" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition border border-white/10">
-                Lihat Jaring-Jaring 2D <i class="fa-solid fa-box-open ml-2"></i>
+            <a href="#visual" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition border border-white/10">
+                Lihat Bentuk 3D & 2D <i class="fa-solid fa-cube ml-2"></i>
             </a>
         </div>
     </section>
@@ -104,44 +103,29 @@
     <!-- Main Content Container -->
     <main class="max-w-4xl mx-auto px-6 space-y-12 mb-20 w-full">
 
-        <!-- 1. PENGERTIAN & UNSUR -->
+        <!-- 1. APA ITU TABUNG -->
         <section id="pengertian" class="glass-card rounded-3xl p-6 md:p-8">
-            <h3 class="text-2xl font-bold mb-6 flex items-center text-pink-300">
-                <i class="fa-solid fa-book-open mr-3"></i> 1. Pengertian & Unsur-Unsur Tabung
+            <h3 class="text-2xl font-bold mb-4 flex items-center text-pink-300">
+                <i class="fa-solid fa-circle-question mr-3"></i> Apa Sebenarnya Tabung Itu?
             </h3>
-            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                <strong>Tabung</strong> adalah bangun ruang sisi lengkung yang dibentuk oleh dua buah lingkaran identik yang sejajar (alas dan tutup) serta sebuah bidang sisi lengkung (selimut) yang mengelilinginya.
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                <strong>Tabung</strong> (atau dalam istilah geometri disebut silinder) adalah salah satu bangun ruang tiga dimensi yang masuk dalam kategori **bangun ruang sisi lengkung**. 
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
-                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-circle-dot mr-2"></i>Sisi Alas & Tutup</h4>
-                    <p class="text-xs text-gray-300">Berbentuk lingkaran kongruen yang sejajar satu sama lain.</p>
-                </div>
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
-                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-arrows-up-down mr-2"></i>Tinggi Tabung ($t$)</h4>
-                    <p class="text-xs text-gray-300">Jarak tegak lurus antara pusat lingkaran alas dan pusat tutup.</p>
-                </div>
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
-                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-ring mr-2"></i>Selimut Tabung</h4>
-                    <p class="text-xs text-gray-300">Bidang lengkung pembungkus sisi tegak tabung.</p>
-                </div>
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
-                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-ruler-horizontal mr-2"></i>Jari-jari ($r$) & Diameter ($d$)</h4>
-                    <p class="text-xs text-gray-300">Jari-jari lingkaran alas dengan ketentuan diameter bernilai $d = 2r$.</p>
-                </div>
-            </div>
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                Bangun ini dibatasi oleh dua buah sisi yang bentuknya identik berupa lingkaran sejajar (yang bertindak sebagai alas dan tutup) serta sebuah sisi lengkung melingkar di bagian tengah yang membungkus keduanya (disebut selimut tabung).
+            </p>
         </section>
 
-        <!-- 2. JARING-JARING TABUNG (VISUAL 3D & 2D) -->
-        <section id="jaring" class="glass-card rounded-3xl p-6 md:p-8">
+        <!-- 2. VISUAL 3D & JARING-JARING 2D -->
+        <section id="visual" class="glass-card rounded-3xl p-6 md:p-8">
             <h3 class="text-2xl font-bold mb-4 flex items-center text-pink-300">
-                <i class="fa-solid fa-box-open mr-3"></i> 2. Visualisasi 3D & Jaring-Jaring 2D Tabung
+                <i class="fa-solid fa-cubes mr-3"></i> Visualisasi Bentuk: 3D Tabung vs Jaring-Jaring 2D
             </h3>
             <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                Berikut adalah simulasi visual bentuk bangun ruang 3D tabung dan bentuk jaring-jaring 2D-nya (terdiri dari 2 lingkaran alas/tutup dan 1 persegi panjang selimut).
+                Gunakan tombol interaktif di bawah ini untuk melihat bagaimana wujud asli tabung berbentuk tiga dimensi (3D) apabila dibentangkan menjadi bidang datar dua dimensi (2D).
             </p>
             
-            <!-- Canvas Preview 3D & 2D -->
+            <!-- Canvas Preview -->
             <div class="bg-purple-950/50 p-4 rounded-2xl border border-purple-500/30 flex flex-col items-center justify-center relative overflow-hidden mb-6">
                 <canvas id="shape-canvas" width="350" height="220" class="max-w-full"></canvas>
                 <div class="flex space-x-3 mt-4">
@@ -149,100 +133,61 @@
                     <button onclick="setMode('2d')" id="btn-2d" class="px-4 py-1.5 rounded-xl bg-white/10 text-gray-300 text-xs font-semibold hover:bg-white/20 transition">Jaring-Jaring 2D</button>
                 </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20 text-xs text-gray-300">
-                    <strong class="text-pink-300 block mb-1">Luas 2 Buah Lingkaran:</strong>
-                    $2 \times \text{luas alas} = 2 \times \pi r^2$
-                </div>
-                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20 text-xs text-gray-300">
-                    <strong class="text-pink-300 block mb-1">Luas Selimut Persegi Panjang:</strong>
-                    $\text{Panjang} \times \text{Lebar} = (2\pi r) \times t = 2\pi r t$
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. RUMUS-RUMUS UTAMA (SESUAI GAMBAR 1) -->
-        <section id="rumus" class="glass-card rounded-3xl p-6 md:p-8">
-            <h3 class="text-2xl font-bold mb-6 flex items-center text-pink-300">
-                <i class="fa-solid fa-square-root-variable mr-3"></i> 3. Rumus-Rumus Penting Tabung
-            </h3>
             
-            <div class="space-y-4 mb-6">
-                <!-- Penjabaran Sesuai Gambar 1 -->
-                <div class="bg-gradient-to-br from-purple-950/60 to-fuchsia-950/60 p-6 rounded-2xl border border-pink-500/30">
-                    <span class="text-xs uppercase tracking-wider text-pink-300 font-semibold block mb-2">Luas Permukaan Tabung (Total Jaring-jaring)</span>
-                    <div class="text-base md:text-lg font-bold text-white space-y-2">
-                        <p class="text-gray-300 text-sm">Luas Permukaan = $(2 \times \text{luas alas}) + \text{luas selimut}$</p>
-                        <p class="text-gray-300 text-sm">Luas Permukaan = $(2 \times \pi r^2) + (2\pi r \times t)$</p>
-                        <div class="p-3 bg-purple-900/40 rounded-xl border border-pink-500/30 text-pink-200 mt-2">
-                            Atau disederhanakan menjadi: <br>
-                            <span class="text-xl font-extrabold text-white">Luas Permukaan = $2\pi r(r + t)$</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-xs text-gray-400 text-center">
+                * Saat tabung dibuka (jaring-jaring 2D), selimutnya berubah wujud menjadi sebuah persegi panjang, sementara alas dan tutupnya tetap berupa dua buah lingkaran.
             </div>
+        </section>
 
+        <!-- 3. SIFAT & UNSUR TABUNG -->
+        <section id="sifat" class="glass-card rounded-3xl p-6 md:p-8">
+            <h3 class="text-2xl font-bold mb-6 flex items-center text-pink-300">
+                <i class="fa-solid fa-list-check mr-3"></i> Karakteristik & Unsur-Unsur Penting Tabung
+            </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-purple-950/40 p-5 rounded-2xl border border-purple-500/20 text-center">
-                    <span class="text-xs uppercase tracking-wider text-purple-300 font-semibold">Luas Selimut Saja</span>
-                    <div class="text-2xl font-bold text-white my-2">$2 \pi r t$</div>
-                    <p class="text-xs text-gray-300">Tanpa menghitung luas alas dan tutup.</p>
+                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
+                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-circle-dot mr-2"></i>Memiliki 3 Buah Sisi</h4>
+                    <p class="text-xs text-gray-300">Terdiri dari satu sisi alas (lingkaran bawah), satu sisi tutup (lingkaran atas), dan satu sisi selimut (bidang lengkung tengah).</p>
                 </div>
-                <div class="bg-purple-950/40 p-5 rounded-2xl border border-purple-500/20 text-center">
-                    <span class="text-xs uppercase tracking-wider text-pink-300 font-semibold">Volume Tabung</span>
-                    <div class="text-2xl font-bold text-white my-2">$\pi r^2 t$</div>
-                    <p class="text-xs text-gray-300">Kapasitas ruang isi di dalam tabung.</p>
+                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
+                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-arrows-up-down mr-2"></i>Tidak Memiliki Titik Sudut</h4>
+                    <p class="text-xs text-gray-300">Berbeda dengan kubus atau balok, tabung tidak mempunyai sudut lancip atau tumpul karena permukaannya yang melingkar halus.</p>
+                </div>
+                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
+                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-grip-lines-vertical mr-2"></i>Memiliki 2 Rusuk Lengkung</h4>
+                    <p class="text-xs text-gray-300">Rusuk pada tabung berupa garis melingkar yang membatasi pertemuan antara bidang alas dengan selimut, serta bidang tutup dengan selimut.</p>
+                </div>
+                <div class="bg-purple-950/40 p-4 rounded-2xl border border-purple-500/20">
+                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300"><i class="fa-solid fa-ruler mr-2"></i>Jari-jari & Tinggi Sejajar</h4>
+                    <p class="text-xs text-gray-300">Memiliki jari-jari ($r$) pada bagian lingkaran serta tinggi ($t$) yang menunjukkan jarak vertikal lurus antara alas dan tutup.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 4. CONTOH SOAL & PEMBAHASAN -->
-        <section id="contoh" class="glass-card rounded-3xl p-6 md:p-8">
+        <!-- 4. PENERAPAN DALAM KEHIDUPAN SEHARI-HARI -->
+        <section id="penerapan" class="glass-card rounded-3xl p-6 md:p-8">
             <h3 class="text-2xl font-bold mb-6 flex items-center text-pink-300">
-                <i class="fa-solid fa-pencil-alt mr-3"></i> 4. Contoh Soal & Pembahasan Kelas 9
+                <i class="fa-solid fa-lightbulb mr-3"></i> Tabung di Kehidupan Sehari-hari
             </h3>
-            <div class="space-y-6">
-                <!-- Soal 1 -->
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                Bentuk tabung sangat mudah ditemukan di sekitar kita karena strukturnya yang kokoh dan efisien untuk menampung benda cair maupun gas. Beberapa contoh nyatanya meliputi:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                 <div class="bg-purple-950/40 p-5 rounded-2xl border border-purple-500/20">
-                    <h4 class="font-semibold text-white mb-2 text-sm text-pink-300">Contoh Soal 1: Luas Permukaan Tabung</h4>
-                    <p class="text-gray-300 text-sm mb-3">
-                        Hitunglah luas permukaan tabung yang memiliki jari-jari $7\text{ cm}$ dan tinggi $10\text{ cm}$ ($\pi = \frac{22}{7}$)!
-                    </p>
-                    <div class="bg-purple-900/30 p-4 rounded-xl border border-purple-500/20 text-xs text-gray-300 space-y-1">
-                        <p><strong>Penyelesaian:</strong></p>
-                        <p>• Rumus: $L = 2\pi r(r + t)$</p>
-                        <p>• Hitung: $L = 2 \times \frac{22}{7} \times 7 \times (7 + 10)$</p>
-                        <p>• Hitung: $L = 44 \times 17 = 748\text{ cm}^2$</p>
-                        <p class="text-pink-300 font-semibold pt-1">• Hasil Akhir: $748\text{ cm}^2$</p>
-                    </div>
+                    <div class="text-pink-400 text-2xl mb-2"><i class="fa-solid fa-box"></i></div>
+                    <h4 class="font-semibold text-white mb-1 text-sm">Kaleng Kemasan</h4>
+                    <p class="text-xs text-gray-400">Kaleng minuman soda, susu, atau makanan kornet.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- 5. KALKULATOR INTERAKTIF -->
-        <section id="kalkulator" class="glass-card rounded-3xl p-6 md:p-8">
-            <h3 class="text-2xl font-bold mb-4 flex items-center text-pink-300">
-                <i class="fa-solid fa-calculator mr-3"></i> 5. Kalkulator Tabung Otomatis
-            </h3>
-            <p class="text-gray-300 text-sm mb-6">Hitung luas permukaan dan volume tabung secara instan:</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1">Jari-jari ($r$ dalam cm):</label>
-                    <input type="number" id="calc-r" value="7" class="w-full bg-purple-950/60 border border-purple-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-pink-400">
+                <div class="bg-purple-950/40 p-5 rounded-2xl border border-purple-500/20">
+                    <div class="text-purple-400 text-2xl mb-2"><i class="fa-solid fa-water"></i></div>
+                    <h4 class="font-semibold text-white mb-1 text-sm">Tangki & Pipa Air</h4>
+                    <p class="text-xs text-gray-400">Pipa saluran paralon dan tangki penampungan air rumah tangga.</p>
                 </div>
-                <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1">Tinggi ($t$ dalam cm):</label>
-                    <input type="number" id="calc-t" value="10" class="w-full bg-purple-950/60 border border-purple-500/30 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-pink-400">
+                <div class="bg-purple-950/40 p-5 rounded-2xl border border-purple-500/20">
+                    <div class="text-fuchsia-400 text-2xl mb-2"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <h4 class="font-semibold text-white mb-1 text-sm">Tabung Gas</h4>
+                    <p class="text-xs text-gray-400">Silinder tabung gas LPG untuk keperluan memasak sehari-hari.</p>
                 </div>
-            </div>
-            <button onclick="hitungTabung()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 rounded-xl shadow-lg transition duration-200 mb-4 text-sm">
-                Hitung Luas & Volume
-            </button>
-            <div id="calc-result" class="bg-purple-950/80 p-4 rounded-xl border border-purple-500/40 text-center font-semibold text-pink-200 text-sm space-y-1">
-                <p>Luas Permukaan: <strong>748 cm²</strong></p>
-                <p>Volume Tabung: <strong>1540 cm³ (1.54 Liter)</strong></p>
             </div>
         </section>
 
@@ -250,12 +195,11 @@
 
     <!-- Footer -->
     <footer class="text-center py-6 text-xs text-gray-500 border-t border-white/10">
-        Modul Belajar Matematika Kelas 9 SMP • Tema Nebula Kosmik ✨
+        Ensiklopedi Matematika Kelas 9 SMP • Tema Nebula Kosmik ✨
     </footer>
 
-    <!-- JavaScript Simulasi 3D/2D, Bintang, & Kalkulator -->
+    <!-- JavaScript Simulasi 3D/2D & Bintang -->
     <script>
-        // Simulasi Canvas 3D & Jaring-jaring 2D
         const shapeCanvas = document.getElementById('shape-canvas');
         const sCtx = shapeCanvas.getContext('2d');
         let currentMode = '3d';
@@ -286,7 +230,7 @@
                 sCtx.fill();
                 sCtx.stroke();
 
-                // Badan Tabung (Sisi Kiri & Kanan)
+                // Badan Tabung
                 sCtx.beginPath();
                 sCtx.moveTo(125, 60);
                 sCtx.lineTo(125, 160);
@@ -307,9 +251,9 @@
                 // Label Teks
                 sCtx.fillStyle = '#ffffff';
                 sCtx.font = '11px Poppins';
-                sCtx.fillText('Tutup (Lingkaran)', 235, 65);
+                sCtx.fillText('Tutup Lingkaran', 235, 65);
                 sCtx.fillText('Selimut Tabung', 235, 115);
-                sCtx.fillText('Alas (Lingkaran)', 235, 165);
+                sCtx.fillText('Alas Lingkaran', 235, 165);
             } else {
                 // Gambar Jaring-Jaring 2D
                 sCtx.strokeStyle = '#f472b6';
@@ -342,25 +286,6 @@
             requestAnimationFrame(drawShape);
         }
         drawShape();
-
-        // Kalkulator Tabung
-        function hitungTabung() {
-            let r = parseFloat(document.getElementById('calc-r').value) || 0;
-            let t = parseFloat(document.getElementById('calc-t').value) || 0;
-            let phi = (r % 7 === 0) ? (22/7) : 3.14;
-            
-            let luas = 2 * phi * r * (r + t);
-            let volume = phi * Math.pow(r, 2) * t;
-            
-            let luasF = Number.isInteger(luas) ? luas : luas.toFixed(2);
-            let volF = Number.isInteger(volume) ? volume : volume.toFixed(2);
-            let liter = (volume / 1000).toFixed(2);
-
-            document.getElementById('calc-result').innerHTML = `
-                <p>Luas Permukaan: <strong>${luasF} cm²</strong></p>
-                <p>Volume Tabung: <strong>${volF} cm³ (${liter} Liter)</strong></p>
-            `;
-        }
 
         // Bintang Background Animasi
         const canvas = document.getElementById('star-canvas');
